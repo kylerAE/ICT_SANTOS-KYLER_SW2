@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kyler's Hobby Shop</title>
+
+  <!-- PyScript -->
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 650px;
+      text-align: center;
+    }
+    h1 {
+      color: #e74c3c;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-bottom: 20px;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background: #f1f1f1;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    .extra {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="shop-name"></h1>
+    <h3 id="owner-info"></h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price (₱)</th>
+        </tr>
+      </thead>
+      <tbody id="product-table"></tbody>
+    </table>
+
+    <div class="footer" id="hours"></div>
+    <div class="extra" id="extra"></div>
+  </div>
+
+  <!-- Connect to main.py -->
+  <script type="py" src="main.py"></script>
+</body>
+</html>
